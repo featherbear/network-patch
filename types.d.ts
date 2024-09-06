@@ -47,5 +47,5 @@ type Panel = {
 }
 
 
-type WithoutId<T> = Omit<T, typeof id>
+type WithoutId<T> = Omit<T, 'id'>
 

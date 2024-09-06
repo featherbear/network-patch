@@ -182,7 +182,6 @@ function formatPortAddress(address: PortAddress | string) {
             }))
         }
 
-        console.log(follow(["Hall", "StageRack", "6"]));
         // console.log(follow([ "Hall", "StageRack-AVB-Switch", "1" ]));
 
 
@@ -203,6 +202,9 @@ function formatPortAddress(address: PortAddress | string) {
                 })))
             }
         }
+
+        console.log(follow(["Office", "Panel3", "8"]));
+
     }
 
     walk()
