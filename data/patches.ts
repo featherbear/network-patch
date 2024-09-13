@@ -72,7 +72,7 @@ const patches: Patch[] = __validatePatches([
     {
         // Hall AP
         from: ['Office', 'Panel3', '8'],
-        to: ['Office', 'Switch', '7'],
+        to: ['Office', 'Switch', '2'],
         features: {
             hasPOE: true
         }
@@ -87,7 +87,7 @@ const patches: Patch[] = __validatePatches([
     },
     {
         from: ['Office', 'Panel3', '7'],
-        to: ['Office', 'Switch', '11']
+        to: ['Office', 'Switch', '7']
     },
     {
         from: ['Office', 'Panel3', '12'],
@@ -255,7 +255,7 @@ const patches: Patch[] = __validatePatches([
     },
     {
         // Hall AP
-        from: ['Hall', 'StageRack', '13'],
+        from: ['Hall', 'StageRack', '12'],
         // Currently directory connected to AP
         to: ['Hall', 'StageRack', '3'],
         features: {
@@ -301,7 +301,19 @@ const patches: Patch[] = __validatePatches([
     {
         from: ['Office', 'Switch', '23'],
         to: ['Office', 'NVR', 'Uplink']
-    }
+    },
+
+    {
+        from: ['Hall', 'StageRack', '13'],
+        to: ['Hall', 'StageRack', '14'],
+    },
+
+    {
+        from: ['Kids', 'TV', '1'],
+        to: 'Kids AP'
+    },
+
+    
 ])
 
 export default patches
